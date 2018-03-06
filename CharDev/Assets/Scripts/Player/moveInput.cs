@@ -6,7 +6,7 @@ using System;
 public class moveInput : MonoBehaviour {
 
 	public float runTime = 0.01f;
-	public static Action<float> KeyAction;
+	public static Action<float, float> KeyAction;
 	public static Action JumpAction;
 	public bool canPlay = true;		
 
@@ -23,7 +23,7 @@ public class moveInput : MonoBehaviour {
 
 			if(KeyAction !=null) 
 			{
-				KeyAction(Input.GetAxis("Horizontal"));
+				KeyAction(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 			}
 			yield return new WaitForSeconds(runTime);
 		}
