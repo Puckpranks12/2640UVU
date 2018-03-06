@@ -13,19 +13,19 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: IdleTrigger
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: RunTrigger
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -50,7 +50,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 790898f6909437a429d4e4db058bfe4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: d7627c5771173474ca2b4789f2db41db, type: 2}
+  EnterEvent: {fileID: 11400000, guid: d7627c5771173474ca2b4789f2db41db, type: 2}
+  ExitEvent: {fileID: 11400000, guid: e8b56c74f7c474e40901010e4d1e20d3, type: 2}
 --- !u!114 &114387143533301096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73,7 +74,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7591afc3c2cfc1a42837d92d5da5b1cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 548fbed3e99ac5240b28abee117be507, type: 2}
+  EnterEvent: {fileID: 11400000, guid: 548fbed3e99ac5240b28abee117be507, type: 2}
+  ExitEvent: {fileID: 11400000, guid: b9b4b485bbcc0a74692c642549bf5534, type: 2}
 --- !u!114 &114460530359127072
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -85,7 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 641196bafeb76b147b3586e88132d489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 4e25c85eaf2ccac46b5947ff845b6092, type: 2}
+  ExitEvent: {fileID: 11400000, guid: 4e25c85eaf2ccac46b5947ff845b6092, type: 2}
 --- !u!1101 &1101140924446680598
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

@@ -4,10 +4,12 @@ using UnityEngine;
 using RoboRyanTron.Unite2017.Events;
 
 public class IdleBehaves : StateMachineBehaviour {
+	public GameEvent ExitEvent;
+	//public GameEvent EnterEvent;
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	//override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-	//
+	//	EnterEvent.Raise();
 	//}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -17,9 +19,9 @@ public class IdleBehaves : StateMachineBehaviour {
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
 
-	public GameEvent Event;
+
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		Event.Raise();
+		ExitEvent.Raise();
 	
 	}
 
